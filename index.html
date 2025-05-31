@@ -1,0 +1,87 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestor de Tareas Futurista 📝</title>
+  <!-- Fuentes y iconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <!-- Script principal -->
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <!-- Encabezado profesional -->
+  <header class="header">
+    <div class="logo">Gestor de Tareas</div>
+
+    <!-- Links de navegación -->
+    <nav class="nav-links">
+      <a href="#form-section">Agregar Tarea</a>
+      <a href="#tasks-section">Mis Tareas</a>
+    </nav>
+
+    <!-- Botón hamburguesa (solo móvil) -->
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+    <!-- Botón para cambiar tema -->
+    <button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
+  </header>
+
+  <!-- Sección principal -->
+  <main class="container">
+    <!-- Hero / Introducción -->
+    <section class="hero">
+      <h1>Organiza tu día</h1>
+      <p>Gestiona tus tareas de manera eficiente.</p>
+    </section>
+
+    <!-- Formulario de tareas -->
+    <section id="form-section" class="form-section">
+      <h2>🛠 Agregar Nueva Tarea</h2>
+      <form id="task-form">
+        <input type="text" id="title" placeholder="Título de la tarea" required />
+        <textarea id="description" placeholder="Descripción" rows="3" required></textarea>
+        <button class="button-form" type="submit">Agregar Tarea</button>
+      </form>
+    </section>
+
+    <!-- Lista de tareas -->
+    <section id="tasks-section" class="tasks-section">
+      <h2>📋 Mis Tareas</h2>
+      <ul id="task-list"></ul>
+    </section>
+  </main>
+
+  <!-- Pie de página profesional -->
+  <footer class="footer">
+    <div class="footer-data">
+      <div class="contact-info">
+        <p>Email: <a href="mailto:pieroallccaco19@gmail.com">pieroallccaco19@gmail.com</a></p>
+        <p>Ubicación: Lima, Perú</p>
+        <p>Teléfono: +51 987 654 321</p>
+      </div>
+      <div class="socials-footer">
+        <a href="https://github.com/PieroA19" target="_blank" rel="noopener noreferrer">
+          <div class="icon-wrapper">
+            <img src="assets/github-dark.png" class="icon light-mode" alt="GitHub modo claro" />
+            <img src="assets/github-light.png" class="icon dark-mode" alt="GitHub modo oscuro" />
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/piero-allccaco-113253289" target="_blank" rel="noopener noreferrer">
+          <div class="icon-wrapper">
+            <img src="assets/linkedin-dark.png" class="icon light-mode" alt="LinkedIn modo claro" />
+            <img src="assets/linkedin-light.png" class="icon dark-mode" alt="LinkedIn modo oscuro" />
+          </div>
+        </a>
+      </div>
+    </div>
+    <p>&copy; <span id="current-year"></span> Gestor de Tareas. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
