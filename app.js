@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // --- API y tareas ---
-const API_URL = 'http://localhost:5000/api/tasks';
+const API_URL = 'https://task-manager-backend-ddls.onrender.com/api/tasks';
 const form = document.getElementById('task-form');
 const taskList = document.getElementById('task-list');
 
